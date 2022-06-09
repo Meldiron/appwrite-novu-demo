@@ -1,0 +1,97 @@
+{
+	"projectId": "appwiteNovuDemo",
+	"projectName": "Appwrite + Novu Demo",
+	"collections": [
+		{
+			"$id": "profiles",
+			"$read": ["role:all"],
+			"$write": ["role:member"],
+			"name": "Profiles",
+			"enabled": true,
+			"permission": "collection",
+			"attributes": [
+				{
+					"key": "nickname",
+					"type": "string",
+					"status": "available",
+					"required": true,
+					"array": false,
+					"size": 255,
+					"default": null
+				},
+				{
+					"key": "favouriteNumber",
+					"type": "integer",
+					"status": "available",
+					"required": true,
+					"array": false,
+					"min": -9223372036854776000,
+					"max": 9223372036854776000,
+					"default": null
+				}
+			],
+			"indexes": []
+		},
+		{
+			"$id": "follows",
+			"$read": ["role:member"],
+			"$write": ["role:member"],
+			"name": "Follows",
+			"enabled": true,
+			"permission": "collection",
+			"attributes": [
+				{
+					"key": "createdAt",
+					"type": "integer",
+					"status": "available",
+					"required": true,
+					"array": false,
+					"min": -9223372036854776000,
+					"max": 9223372036854776000,
+					"default": null
+				},
+				{
+					"key": "followBy",
+					"type": "string",
+					"status": "available",
+					"required": true,
+					"array": false,
+					"size": 256,
+					"default": null
+				},
+				{
+					"key": "followTo",
+					"type": "string",
+					"status": "available",
+					"required": true,
+					"array": false,
+					"size": 256,
+					"default": null
+				}
+			],
+			"indexes": [
+				{
+					"key": "followPairIndex",
+					"type": "unique",
+					"status": "available",
+					"attributes": ["followBy", "followTo"],
+					"orders": ["ASC", "ASC"]
+				}
+			]
+		}
+	],
+	"functions": [
+		{
+			"$id": "onFollow",
+			"name": "onFollow",
+			"runtime": "node-16.0",
+			"path": "functions/onFollow",
+			"entrypoint": "src/index.js",
+			"execute": [],
+			"events": ["collections.follows.documents.*.create"],
+			"ignore": ["nod_modules", ".env"],
+			"schedule": "",
+			"timeout": 15
+		}
+	]
+}
