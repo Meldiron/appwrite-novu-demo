@@ -79,29 +79,32 @@
 </script>
 
 <p class="mb-8 text-lg text-slate-800">
-	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae soluta quod labore consectetur
-	quos? Quo illum repellat, aut blanditiis consectetur optio quasi aperiam rerum, esse culpa, eius
-	sequi eligendi expedita.
+	<a href="https://appwrite.io/" class="underline">Appwrite</a> is backend as a service that can
+	replace your whole backend. This not only makes development easier and secure, but also more fun!
+	Talking about fun, <a href="https://novu.co/" class="underline">Novu</a> is notification server made
+	right! Within a few minutes of configuration, your app wil use the most powerful open-source notification
+	manager.
 </p>
 
 <p class="mb-8 text-lg text-slate-400">
-	Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore excepturi at asperiores! Dolor
-	voluptas aspernatur ipsam reiciendis eum vero libero cumque sint distinctio dolorum, quasi labore
-	pariatur rerum quam voluptates.
+	This is a demo application showcasing that Appwrite and Novu plays well together. You can check
+	out source code of this application on <a
+		href="https://github.com/Meldiron/appwrite-novu-demo"
+		class="underline">GitHub</a
+	>.
 </p>
 
 <h2 class="text-2xl font-bold text-slate-800 mb-8 mt-8">Let's Create Account!</h2>
 
 <p class="mb-8 text-lg text-slate-800">
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates accusantium
-	necessitatibus, magni laborum placeat sint aliquam commodi dolorum quod quis perspiciatis eum?
-	Aliquam earum repudiandae sunt. Provident, veritatis reiciendis.
+	Since we are showcasing notifications, and notifications are usually personalized, let's make an
+	account. Feel free to use fake information, but keep in mind, you won't be able to see email
+	notifications if you dont provide valid email.
 </p>
 
 <p class="mb-8 text-lg text-slate-400">
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates accusantium
-	necessitatibus, magni laborum placeat sint aliquam commodi dolorum quod quis perspiciatis eum?
-	Aliquam earum repudiandae sunt. Provident, veritatis reiciendis.
+	Your email is stored only for authentication purposes and is never shared with any anyone. Not
+	even in your in-app profile!
 </p>
 
 <div class="grid grid-cols-6 md:grid-cols-12 gap-12">

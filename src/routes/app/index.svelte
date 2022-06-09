@@ -98,7 +98,9 @@
 	to get notified? Share your profile and get followed by your friends.
 </p>
 
-<div class="flex items-center justify-start space-x-3">
+<div
+	class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-start sm:items-center justify-start sm:space-x-3"
+>
 	<a href={'/app/profiles/' + $authStore.profile?.$id}>
 		<button
 			type="button"

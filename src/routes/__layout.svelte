@@ -14,7 +14,7 @@
 
 <div class="max-w-[770px] w-full mx-auto p-4 md:pt-12">
 	<a
-		class="flex items-center justify-start space-x-3"
+		class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row items-center justify-start sm:space-x-3"
 		href={$authStore.profile && $authStore.user ? '/app' : '/'}
 	>
 		<div class="bg-slate-300 text-slate-600 rounded-full p-1">
@@ -30,7 +30,7 @@
 			</svg>
 		</div>
 
-		<h1 class="text-4xl font-bold text-slate-800">Appwrite ❤️ Novu</h1></a
+		<h1 class="text-4xl font-bold text-slate-800 text-center sm:text-left">Appwrite ❤️ Novu</h1></a
 	>
 
 	<div class="h-1 w-full rounded-full bg-slate-100 my-8" />
