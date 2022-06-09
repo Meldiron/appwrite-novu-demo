@@ -29,13 +29,13 @@ module.exports = async function (req, res) {
   const data = JSON.parse(req.env.APPWRITE_FUNCTION_EVENT_DATA);
 
   const followBy = await database.getDocument("profiles", data.followBy);
-  const followTo = await database.getDocument("profiles", data.followTo);
+  // const followTo = await database.getDocument("profiles", data.followTo);
 
   const followToUser = await user.get(data.followTo);
 
   const novuResponse = await novu.trigger('newfollower', {
     to: {
-      subscriberId: followToUser.$id,
+      subscriberId: data.followTo,
       email: followToUser.email
     },
     payload: {

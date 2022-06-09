@@ -5,10 +5,13 @@ function initNovu(user) {
         var before = o.getElementsByTagName(f)[0]; before.parentNode.insertBefore(elt, before);
     })(window, document, 'https://embed.novu.co/embed.umd.min.js', 'novu', 'script');
 
-    novu.init('q6MiQjPp0NkA', {
+    novu.init('X49R-AjkOFtg', {
         unseenBadgeSelector: '#unseen-badge',
         bellSelector: '#notification-bell',
     }, {
-        subscriberId: user.$id
-    })
+        subscriberId: user.$id,
+        email: user.email
+    });
+
+    console.log("Listening to notifications as ", user.$id);
 }

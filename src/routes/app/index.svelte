@@ -98,6 +98,11 @@
 	to get notified? Share your profile and get followed by your friends.
 </p>
 
+<p class="mb-8 text-lg text-slate-400">
+	When someone follows you, you get a notification! That will be in-app if you have app opened
+	(upper right corner), or in your email inbox if you are offline.
+</p>
+
 <div
 	class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-start sm:items-center justify-start sm:space-x-3"
 >
@@ -158,5 +163,7 @@
 			{/if}
 			<span>Load More</span>
 		</button>
+	{:else}
+		<p class="mb-8 text-lg text-slate-400">That's it, you have just seen all profiles.</p>
 	{/if}
 </div>

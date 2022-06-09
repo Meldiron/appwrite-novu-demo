@@ -1,4 +1,22 @@
-# create-svelte
+# 🔔 Appwrite ❤️ Novu
+
+This is a demo application showcasing Appwrite backend-as-a-service working hand in hand with Novu notification server.
+
+This demo app allows users to register and login. During registration, a simple profile is created. Once logged in, you can see list of all profiles, and follow them if you like them. When you follow a profile, a notification is sent using Novu.
+
+## 🖼️ Pics, pics, pics!
+
+![Screenstor](docs/screen1.png)
+
+![Screenstor](docs/screen2.png)
+
+![Screenstor](docs/screen3.png)
+
+![Screenstor](docs/screen4.png)
+
+![Screenstor](docs/screen5.png)
+
+## 🤖 Auto-generated README by Svelte (Kit)
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
